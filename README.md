@@ -3,6 +3,6 @@
 SQL interview prep: DataLemur + LeetCode + business patterns (notes + solutions).
 
 ## Progress
-- DataLemur (Practice): 8
+- DataLemur (Practice): 13
 - LeetCode SQL 50: 0
 - Business SQL: 0
