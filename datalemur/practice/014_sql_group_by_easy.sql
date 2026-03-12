@@ -7,12 +7,12 @@
 Approach:
 - Group by ticker
 - Compute MIN(open) per ticker
-- Order by the minimum open price (descending)
+- Order by the minimum (descending)
 */
 
 SELECT
-  ticker,
-  MIN(open) AS min_open
+  MIN(open) AS min,
+  ticker
 FROM stock_prices
 GROUP BY ticker
-ORDER BY min_open DESC;
+ORDER BY min DESC;
