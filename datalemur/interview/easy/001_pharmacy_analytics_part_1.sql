@@ -1,17 +1,17 @@
 -- Title: Pharmacy Analytics (Part 1)
 -- Source: DataLemur (Interview - Easy, CVS Health)
--- Link: (paste the DataLemur URL)
+-- Link: https://datalemur.com/questions/top-profitable-drugs
 -- Concepts: arithmetic, ORDER BY, LIMIT
 
 /*
-Goal:
-- Top 3 most profitable drugs
+Approach:
 - total_profit = total_sales - cogs
+- Order by total_profit desc and keep top 3
 */
 
--- Solution (my submission):
-
-SELECT drug, total_sales - cogs as total_profit
+SELECT
+  drug,
+  total_sales - cogs AS total_profit
 FROM pharmacy_sales
 ORDER BY total_profit DESC
 LIMIT 3;

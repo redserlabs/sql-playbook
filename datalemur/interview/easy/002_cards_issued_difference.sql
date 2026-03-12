@@ -1,20 +1,17 @@
 -- Title: Cards Issued Difference
 -- Source: DataLemur (Interview - Easy, JPMorgan)
--- Link: (paste the DataLemur URL)
+-- Link: https://datalemur.com/questions/cards-issued-difference
 -- Concepts: GROUP BY, MAX, MIN, arithmetic, ORDER BY
 
 /*
-Goal:
+Approach:
 - difference = MAX(issued_amount) - MIN(issued_amount)
-- Group by card_name
-- Order by difference desc
+- Group by card_name, order by difference desc
 */
-
--- Solution (my submission):
 
 SELECT
   card_name,
-  MAX(issued_amount) - MIN(issued_amount) as difference
+  MAX(issued_amount) - MIN(issued_amount) AS difference
 FROM monthly_cards_issued
 GROUP BY card_name
 ORDER BY difference DESC;
