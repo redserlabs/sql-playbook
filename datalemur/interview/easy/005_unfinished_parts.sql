@@ -1,7 +1,7 @@
 -- Title: Unfinished Parts
--- Source: DataLemur (Practice, Tesla)
+-- Source: DataLemur (Interview - Easy, Tesla)
 -- Link: https://datalemur.com/questions/tesla-unfinished-parts
--- Concepts: WHERE, NULL handling
+-- Concepts: NULL handling, WHERE
 
 /*
 Approach:
