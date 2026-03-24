@@ -1,3 +1,9 @@
+-- Source: DataLemur (Interview)
+-- Difficulty: Medium
+-- Title: Odd and Even Measurements (Google)
+-- Link: https://datalemur.com/questions/odd-even-measurements
+-- Concepts: CTE, ROW_NUMBER, window function, FILTER, modulo, aggregation
+
 WITH ranked_measurements AS (
   SELECT
     CAST(measurement_time AS DATE) AS measurement_day,

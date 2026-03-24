@@ -1,3 +1,9 @@
+-- Source: DataLemur (Interview)
+-- Difficulty: Medium
+-- Title: Top 5 Artists (Spotify)
+-- Link: https://datalemur.com/questions/top-fans-rank
+-- Concepts: CTE, JOIN, GROUP BY, COUNT, DENSE_RANK, window function
+
 WITH top_10_cte AS (
   SELECT
     artists.artist_name,

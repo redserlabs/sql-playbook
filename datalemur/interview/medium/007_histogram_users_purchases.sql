@@ -1,3 +1,9 @@
+-- Source: DataLemur (Interview)
+-- Difficulty: Medium
+-- Title: Histogram of Users and Purchases (Walmart)
+-- Link: https://datalemur.com/questions/histogram-users-purchases
+-- Concepts: CTE, RANK, window function, GROUP BY, COUNT, ORDER BY
+
 WITH latest_transactions_cte AS (
   SELECT
     transaction_date,
